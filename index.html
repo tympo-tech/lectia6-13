@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .diff-color {
+            color: red;
+        }
+
+        p {
+            color: blue;
+        }
+
+        .hover-red {
+            height: 75px; 
+            width: 75px; 
+            border: 5px solid rgb(0,0,0);
+        }
+
+        .hover-red:hover {
+            border-color: red;
+        }
+
+        .title::before {
+            content: "Before-";
+        }
+
+        .title::after {
+            content: "-After";
+        }
+
+        .parent {
+            height: 50px; 
+            width: 250px;
+            display: flex;
+            /* horizontal */
+            justify-content: center;
+            /* vertical */
+            align-items: center;
+            border: 1px solid rgb(0,0,0);
+        }
+
+        .child {
+            height: 25px; 
+            width: 62px;
+            border: 1px solid rgb(0,0,0);
+        }
+    </style>
+    <h1 class="title"">Title</h1>
+    <div style="margin-left: 16px; 
+    margin-right: 32px; 
+    margin-top: 8px; 
+    margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid rgb(0,0,0);
+    "></div>
+    <div>
+        <p class="diff-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, incidunt sequi ab nesciunt fuga ad quaerat reiciendis totam, nostrum aliquid delectus aut! Repellendus cum quae veritatis aperiam neque vero repudiandae?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia explicabo, quidem ab vero nesciunt reiciendis! Assumenda eum ea nam eos recusandae autem alias aperiam natus architecto tempore, molestias dolores dignissimos!</p>
+        <p class="diff-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam aliquam, eaque mollitia nostrum quas explicabo doloremque? Hic exercitationem distinctio officia corporis adipisci consequatur, tenetur nisi dolores iste non culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis distinctio esse fuga sint, molestias assumenda cumque eum eaque atque aut. Earum veniam quae dignissimos perspiciatis modi, tempore dolore nisi beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti illum tempora, quia dolorem soluta est possimus enim, praesentium temporibus voluptatibus repellendus repellat explicabo facilis vitae architecto similique esse. Ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad voluptatem voluptas nisi, voluptatum reprehenderit in soluta obcaecati, sint pariatur maiores quas quasi labore ratione odio, nobis ex est itaque minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique quidem, numquam placeat consectetur nihil laborum vero quis itaque aliquid dicta modi sit ullam amet quo molestiae quae animi officiis.</p>
+        <p class="diff-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus. Dolorum atque officia explicabo accusantium earum, quisquam quos qui velit cumque dolor placeat minima quas, corporis amet ipsa iusto voluptatem.</p>
+    </div>
+    <div class="hover-red"></div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
